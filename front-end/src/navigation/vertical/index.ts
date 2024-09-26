@@ -9,7 +9,10 @@ import CreditCardOutline from 'mdi-material-ui/CreditCardOutline'
 import AccountPlusOutline from 'mdi-material-ui/AccountPlusOutline'
 import AlertCircleOutline from 'mdi-material-ui/AlertCircleOutline'
 import GoogleCirclesExtended from 'mdi-material-ui/GoogleCirclesExtended'
-import SchoolOutline from 'mdi-material-ui/SchoolOutline' // Novo ícone
+import AccountTieOutline from 'mdi-material-ui/AccountTieOutline' // New icon for "Perfil do Professor"
+import AccountGroupOutline from 'mdi-material-ui/AccountGroupOutline' // New icon for "Alunos"
+import CalendarOutline from 'mdi-material-ui/CalendarOutline' // New icon for "Agendamentos"
+import CheckCircleOutline from 'mdi-material-ui/CheckCircleOutline' // New icon for "Check-in de Aulas"
 
 // ** Type import
 import { VerticalNavItemsType } from 'src/@core/layouts/types'
@@ -23,8 +26,23 @@ const navigation = (): VerticalNavItemsType => {
     },
     {
       title: 'Perfil do Professor',
-      icon: SchoolOutline, // Ícone atualizado
+      icon: AccountTieOutline, // Updated icon for "Perfil do Professor"
       path: '/teacher-profile'
+    },
+    {
+      title: 'Alunos',
+      icon: AccountGroupOutline, // Updated icon for "Alunos"
+      path: '/students'
+    },
+    {
+      title: 'Agendamentos',
+      icon: CalendarOutline, // Updated icon for "Agendamentos"
+      path: '/appointments'
+    },
+    {
+      title: 'Check-in de Aulas',
+      icon: CheckCircleOutline, // New icon for "Check-in de Aulas"
+      path: '/class-check-in'
     },
     {
       title: 'Dados da conta',
@@ -32,10 +50,10 @@ const navigation = (): VerticalNavItemsType => {
       path: '/account-settings'
     },
     {
-      sectionTitle: 'Pages'
+      sectionTitle: 'Pages Pagamentos'
     },
     {
-      title: 'Login',
+      title: 'Dados de pagamento',
       icon: Login,
       path: '/pages/login',
       openInNewTab: true
@@ -69,11 +87,6 @@ const navigation = (): VerticalNavItemsType => {
       title: 'Cards',
       icon: CreditCardOutline,
       path: '/cards'
-    },
-    {
-      title: 'Agendamentos',
-      icon: Table,
-      path: '/tables'
     },
     {
       icon: CubeOutline,
